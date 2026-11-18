@@ -1,0 +1,112 @@
+{
+  "schema": 2,
+  "initialized_at": "2026-11-18",
+  "checked_at": null,
+  "sources": {
+    "rain": {
+      "name": "Copernicus ERA5 via Open-Meteo",
+      "url": "https://open-meteo.com/en/docs/historical-weather-api",
+      "frequency": "quotidien, retard d’environ 5–7 jours",
+      "method": "Points sentinelles, pas de moyennes régionales"
+    },
+    "fires": {
+      "name": "NASA EONET",
+      "url": "https://eonet.gsfc.nasa.gov/docs/v3",
+      "frequency": "quotidien",
+      "method": "Événements répertoriés, pas surfaces brûlées"
+    },
+    "floods": {
+      "name": "NASA EONET",
+      "url": "https://eonet.gsfc.nasa.gov/docs/v3",
+      "frequency": "quotidien",
+      "method": "Événements répertoriés, inventaire non exhaustif"
+    },
+    "prices": {
+      "name": "FEWS NET Data Warehouse",
+      "url": "https://help.fews.net/fdw/fews-net-api",
+      "frequency": "mensuel ou variable",
+      "method": "Prix unitaires locaux, pays et unités non comparables directement"
+    },
+    "health": {
+      "name": "OMS — Disease Outbreak News",
+      "url": "https://www.who.int/emergencies/disease-outbreak-news",
+      "frequency": "à chaque publication",
+      "method": "Bulletins sanitaires, pas incidence ni attribution ENSO"
+    },
+    "displacement": {
+      "name": "HCR — Refugee Data Portal",
+      "url": "https://refugeedata.unhcr.org/en/documentation/technical-reference/api/",
+      "frequency": "variable, données parfois révisées",
+      "method": "Population de réfugiés hébergés, toutes causes confondues ; pas déplacés climatiques"
+    },
+    "harvests": {
+      "name": "GEOGLAM / Crop Monitor",
+      "url": "https://www.cropmonitor.org/",
+      "frequency": "publication périodique",
+      "method": "Bulletins à valider manuellement ; aucune API intégrée"
+    }
+  },
+  "datasets": {
+    "rain": {
+      "status": "jamais collecté",
+      "checked_at": null,
+      "as_of": null,
+      "records": [],
+      "warnings": [],
+      "error": null
+    },
+    "fires": {
+      "status": "jamais collecté",
+      "checked_at": null,
+      "as_of": null,
+      "records": [],
+      "warnings": [],
+      "error": null
+    },
+    "floods": {
+      "status": "jamais collecté",
+      "checked_at": null,
+      "as_of": null,
+      "records": [],
+      "warnings": [],
+      "error": null
+    },
+    "prices": {
+      "status": "jamais collecté",
+      "checked_at": null,
+      "as_of": null,
+      "records": [],
+      "warnings": [],
+      "error": null
+    },
+    "health": {
+      "status": "jamais collecté",
+      "checked_at": null,
+      "as_of": null,
+      "records": [],
+      "warnings": [],
+      "error": null
+    },
+    "displacement": {
+      "status": "jamais collecté",
+      "checked_at": null,
+      "as_of": null,
+      "records": [],
+      "warnings": [],
+      "error": null
+    },
+    "harvests": {
+      "status": "validation humaine requise",
+      "checked_at": null,
+      "as_of": null,
+      "records": [],
+      "warnings": [],
+      "error": null
+    }
+  },
+  "alerts": [],
+  "notes": [
+    "Observations d’origines différentes, sans attribution automatique à ENSO.",
+    "Les données en blanc ne sont pas égales à zéro."
+  ]
+}
